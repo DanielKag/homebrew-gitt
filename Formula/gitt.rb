@@ -7,10 +7,11 @@
 class Gitt < Formula
   desc "Interactive git TUI: fuzzy log, staging, diffs, and branches"
   homepage "https://github.com/DanielKag/gitt"
+  # `version` is deliberately absent: Homebrew scans 0.1.0 out of the URL, and stating it again is a
+  # `brew audit` error. The `test` block below still reads it via `version`.
   url "https://github.com/DanielKag/gitt/releases/download/v0.1.0/gitt-0.1.0-macos-universal.tar.gz"
   sha256 "8b5c03d77c090488cfca8cb3cb6b4e8a4d207bbaa5da607a5af375c72828e55a"
   license "MIT"
-  version "0.1.0"
 
   depends_on :macos
 
