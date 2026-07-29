@@ -1,16 +1,16 @@
-# Homebrew formula for gitt, published to the DanielKag/homebrew-gitt tap by the release workflow in
-# DanielKag/gitt, which fills in the version, archive name, and checksum placeholders below:
+# Homebrew formula for gitt, published to the danielkag/homebrew-gitt tap by the release workflow in
+# danielkag/gitt, which fills in the version, archive name, and checksum placeholders below:
 #
-#   brew tap DanielKag/gitt && brew install gitt
+#   brew tap danielkag/gitt && brew install gitt
 #
 # The download is one macOS universal binary (arm64 + x86_64), so there is no per-arch branching.
 class Gitt < Formula
   desc "Interactive git TUI: fuzzy log, staging, diffs, and branches"
-  homepage "https://github.com/DanielKag/gitt"
+  homepage "https://github.com/danielkag/gitt"
   # `version` is deliberately absent: Homebrew scans 0.1.0 out of the URL, and stating it again is a
   # `brew audit` error. The `test` block below still reads it via `version`.
-  url "https://github.com/DanielKag/gitt/releases/download/v0.1.0/gitt-0.1.0-macos-universal.tar.gz"
-  sha256 "8b5c03d77c090488cfca8cb3cb6b4e8a4d207bbaa5da607a5af375c72828e55a"
+  url "https://github.com/danielkag/gitt/releases/download/v0.2.0/gitt-0.2.0-macos-universal.tar.gz"
+  sha256 "b5352aa1f894bcf275600a94b24b7313a89bf3b896272706ba2e07eb78c1d5f9"
   license "MIT"
 
   depends_on :macos
